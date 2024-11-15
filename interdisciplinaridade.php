@@ -1,13 +1,12 @@
 <?php
-$host = '192.168.31.39';        // Endereço do servidor (exemplo: localhost ou IP)
-$dbname = 'db231072095';      // Nome do banco de dados
-$username = 'usuario';      // Nome de usuário do banco de dados
-$password = 'usuario';        // Senha do usuário
-
+$host = '192.168.31.39';        
+$dbname = 'db231072095';      
+$username = 'usuario';      
+$password = 'usuario';        
 
 try {
     // Criando a conexão PDO
-    $dsn = "pgsql:host=$host;dbname=$dbname";  // String de conexão
+    $dsn = "pgsql:host=$host;dbname=$dbname";  
     $pdo = new PDO($dsn, $username, $password);
    
     // Definir o modo de erro do PDO para exceção
